@@ -1,0 +1,127 @@
+.text-opacity-70 {
+    --bs-text-opacity: 0.70;
+}
+
+.text-opacity-60 {
+    --bs-text-opacity: 0.6;
+}
+
+.bg-opacity-20 {
+    --bs-bg-opacity: 0.20;
+}
+
+.w-fit {
+    width: fit-content !important;
+}
+
+.bg-blur {
+    backdrop-filter: blur(16px)
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.cursor-auto{
+    cursor: auto !important;
+}
+
+.text-truncate-2 {
+    overflow: hidden;
+    display: block;
+    max-height: 4.4rem;
+    -webkit-line-clamp: 2;
+    display: box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.btn-check:checked+.btn,
+:not(.btn-check)+.btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    box-shadow: unset !important;
+
+    .btn-text {
+        color: var(--bs-white) !important;
+    }
+}
+
+.btn {
+    position: relative; // Needed for absolute children
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--bs-primary);
+    border-radius: 9999px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    width: fit-content;
+    padding: 17px 58px 17px 24px;
+
+    &:hover {
+        background-color: var(--bs-primary);
+    }
+
+    .btn-text {
+        position: relative;
+        z-index: 1;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--bs-white);
+        transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        padding-inline-end: 16px;
+    }
+
+    &:hover .btn-text {
+        color: var(--bs-white);
+        transform: translateX(2.5rem); // 10 x 0.25rem
+    }
+
+    .btn-icon {
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translate(-108%, -50%);
+        z-index: 0;
+        transition: transform 0.4s ease, left 0.4s ease;
+    }
+
+    &:hover .btn-icon {
+        left: 0;
+        transform: translate(8%, -50%);
+    }
+}
+
+
+.btn-dark {
+    &:hover {
+        color: $dark !important;
+        background-color: $secondary !important;
+    }
+}
+
+.btn-secondary {
+    &:hover {
+        color: $white !important;
+        background-color: $primary !important;
+    }
+}
+
+.btn-outline-primary {
+    background-color: transparent !important;
+
+    &:hover {
+        background-color: $dark !important;
+
+        .btn-text {
+            color: $white !important;
+        }
+    }
+}
