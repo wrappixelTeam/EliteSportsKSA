@@ -176,10 +176,21 @@ $(function () {
   });
 
   // RTL
+  const englishFlag = document.querySelector("#united-kingdom-flag");
+  const arabFlag  = document.querySelector("#united-arab-emirates-flag");
   directionRtl.addEventListener("click", () => {
     const currentDir = document.documentElement.getAttribute("dir");
     const newDir = currentDir === "ltr" ? "rtl" : "ltr";
     document.documentElement.setAttribute("dir", newDir);
+
+    if(newDir === "rtl"){
+      arabFlag.classList.replace("d-block" , "d-none");
+      englishFlag.classList.replace("d-none" , "d-block")
+    }else{
+            arabFlag.classList.replace("d-none" , "d-block");
+      englishFlag.classList.replace("d-block" , "d-none")
+    }
+
 
     // Destroy and reinitialize the carousel
     const $carousel = $(".testimonials-slider .owl-carousel");

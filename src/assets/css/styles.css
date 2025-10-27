@@ -21330,7 +21330,30 @@ html[dir=rtl] body {
   text-align: right;
   direction: rtl;
 }
-html[dir=rtl] body .logo .logo-img img {
+html[dir=rtl] body .btn-icon {
+  transform: rotateY(180deg);
+  left: inherit;
+  right: 4px;
+  top: 6%;
+}
+html[dir=rtl] body .btn:hover .btn-icon {
+  left: 4px;
+  transform: none;
+  right: inherit;
+}
+html[dir=rtl] body .owl-nav .owl-prev svg {
+  transform: rotateY(180deg);
+}
+html[dir=rtl] body .owl-nav .owl-next svg {
+  transform: rotateY(180deg);
+}
+html[dir=rtl] body .pagination .page-link iconify-icon {
+  transform: rotateY(180deg);
+}
+html[dir=rtl] body .header .header-wrapper {
+  flex-direction: row-reverse !important;
+}
+html[dir=rtl] body .dir-arrow-rtl iconify-icon {
   transform: rotateY(180deg);
 }
 html[dir=rtl] body .text-start {
@@ -21346,10 +21369,15 @@ html[dir=rtl] body .breadcrumb-item + .breadcrumb-item {
 html[dir=rtl] body .breadcrumb-item + .breadcrumb-item::before {
   float: right;
   margin: 4px -4px 4px 4px;
+  transform: rotateY(180deg);
 }
 html[dir=rtl] body .accordion-button::after {
   margin-right: auto;
   margin-left: unset;
+}
+html[dir=rtl] body .dropdown-menu,
+html[dir=rtl] body .accordion-button {
+  text-align: right;
 }
 html[dir=rtl] body .text-start {
   text-align: right !important;
@@ -28857,6 +28885,110 @@ html[dir=rtl] body .mx-auto {
   html[dir=rtl] body .mx-xxl-auto {
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+}
+html[dir=rtl] body .border-start.border-2.border-info {
+  border-right: 2px solid var(--bs-info) !important;
+  border-left: 0 !important;
+}
+html[dir=rtl] body .border-start.border-2.border-warning {
+  border-right: 2px solid var(--bs-warning) !important;
+  border-left: 0 !important;
+}
+html[dir=rtl] body .border-start.border-2.border-danger {
+  border-right: 2px solid var(--bs-danger) !important;
+  border-left: 0 !important;
+}
+html[dir=rtl] body .border-start.border-2.border-primary {
+  border-right: 2px solid var(--bs-primary) !important;
+  border-left: 0 !important;
+}
+html[dir=rtl] body .border-start.border-2.border-success {
+  border-right: 2px solid var(--bs-success) !important;
+  border-left: 0 !important;
+}
+html[dir=rtl] body .border-start {
+  border-right: 1px solid var(--bs-border-color) !important;
+  border-left: 0 !important;
+}
+html[dir=rtl] body .border-end {
+  border-left: 1px solid var(--bs-border-color) !important;
+  border-right: 0 !important;
+}
+html[dir=rtl] body .border-end-0 {
+  border-left: 0 !important;
+}
+html[dir=rtl] body .border-start-0 {
+  border-right: 0 !important;
+}
+html[dir=rtl] body .dropdown-menu-start {
+  --bs-position: start;
+  right: 0 /* rtl:ignore */;
+  left: auto /* rtl:ignore */;
+}
+html[dir=rtl] body .dropdown-menu-end {
+  --bs-position: end;
+  right: auto /* rtl:ignore */;
+  left: 0 /* rtl:ignore */;
+}
+@media (min-width: 576px) {
+  html[dir=rtl] body .dropdown-menu-sm-start {
+    --bs-position: start;
+    right: 0 /* rtl:ignore */;
+    left: auto /* rtl:ignore */;
+  }
+  html[dir=rtl] body .dropdown-menu-sm-end {
+    --bs-position: end;
+    right: auto /* rtl:ignore */;
+    left: 0 /* rtl:ignore */;
+  }
+}
+@media (min-width: 768px) {
+  html[dir=rtl] body .dropdown-menu-md-start {
+    --bs-position: start;
+    right: 0 /* rtl:ignore */;
+    left: auto /* rtl:ignore */;
+  }
+  html[dir=rtl] body .dropdown-menu-md-end {
+    --bs-position: end;
+    right: auto /* rtl:ignore */;
+    left: 0 /* rtl:ignore */;
+  }
+}
+@media (min-width: 992px) {
+  html[dir=rtl] body .dropdown-menu-lg-start {
+    --bs-position: start;
+    right: 0 /* rtl:ignore */;
+    left: auto /* rtl:ignore */;
+  }
+  html[dir=rtl] body .dropdown-menu-lg-end {
+    --bs-position: end;
+    right: auto /* rtl:ignore */;
+    left: 0 /* rtl:ignore */;
+  }
+}
+@media (min-width: 1200px) {
+  html[dir=rtl] body .dropdown-menu-xl-start {
+    --bs-position: start;
+    right: 0 /* rtl:ignore */;
+    left: auto /* rtl:ignore */;
+  }
+  html[dir=rtl] body .dropdown-menu-xl-end {
+    --bs-position: end;
+    right: auto /* rtl:ignore */;
+    left: 0 /* rtl:ignore */;
+  }
+}
+@media (min-width: 1400px) {
+  html[dir=rtl] body .dropdown-menu-xxl-start {
+    --bs-position: start;
+    right: 0 /* rtl:ignore */;
+    left: auto /* rtl:ignore */;
+  }
+  html[dir=rtl] body .dropdown-menu-xxl-end {
+    --bs-position: end;
+    right: auto /* rtl:ignore */;
+    left: 0 /* rtl:ignore */;
   }
 }
 
