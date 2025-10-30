@@ -21332,14 +21332,20 @@ html[dir=rtl] body {
 }
 html[dir=rtl] body .btn-icon {
   transform: rotateY(180deg);
-  left: inherit;
-  right: 4px;
+  left: 4px;
+  right: inherit;
   top: 6%;
 }
+html[dir=rtl] body .btn {
+  padding: 17px 24px 17px 58px;
+}
+html[dir=rtl] body .btn:hover .btn-text {
+  transform: translateX(-2.5rem);
+}
 html[dir=rtl] body .btn:hover .btn-icon {
-  left: 4px;
+  right: 4px;
   transform: none;
-  right: inherit;
+  left: inherit;
 }
 html[dir=rtl] body .owl-nav .owl-prev svg {
   transform: rotateY(180deg);
@@ -21358,9 +21364,6 @@ html[dir=rtl] body .dir-arrow-rtl iconify-icon {
 }
 html[dir=rtl] body .text-start {
   text-align: right !important;
-}
-html[dir=rtl] body .btn .btn-text {
-  padding-inline-start: 16px;
 }
 html[dir=rtl] body .breadcrumb-item + .breadcrumb-item {
   padding-left: 0;

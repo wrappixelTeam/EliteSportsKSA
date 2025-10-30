@@ -353,20 +353,62 @@ html[dir=rtl] body {
 
     .btn-icon {
         transform: rotateY(180deg);
-        left: inherit;
-        right: 4px;
+        left: 4px;
+        right: inherit;
         top: 6%;
     }
 
     .btn {
+        padding: 17px 24px 17px 58px;
+
         &:hover {
+
+            .btn-text {
+                transform: translateX(-2.5rem);
+            }
+
             .btn-icon {
-                left: 4px;
+                right: 4px;
                 transform: none;
-                right: inherit;
+                left: inherit;
             }
         }
     }
+
+    // .btn {
+    //     padding: 17px 24px 17px 58px;
+
+    //     .btn-text {
+
+    //     }
+
+    //     .btn-icon {
+    //         left: auto;
+    //         right: 100%;
+    //         transform: translate(108%, -50%);
+
+
+    //     }
+    //     iconify-icon{
+    //         svg{
+    //             transform: rotateY(180deg);
+    //         }
+    //     }
+
+
+    //     &:hover{
+
+    //         .btn-text{
+    //             transform: translateX(-2.5rem);
+    //         }
+
+    //         .btn-icon{
+    //             left: 100%;
+    //             right: auto;
+    //             transform: translate(-108%, -50%);
+    //         }
+    //     }
+    // }
 
     .owl-nav {
         .owl-prev {
@@ -404,10 +446,6 @@ html[dir=rtl] body {
 
     .text-start {
         text-align: right !important;
-    }
-
-    .btn .btn-text {
-        padding-inline-start: 16px;
     }
 
     .breadcrumb-item+.breadcrumb-item {
