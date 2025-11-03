@@ -21344,7 +21344,7 @@ html[dir=rtl] body .btn:hover .btn-text {
 }
 html[dir=rtl] body .btn:hover .btn-icon {
   right: 4px;
-  transform: none;
+  transform: rotateY(180deg);
   left: inherit;
 }
 html[dir=rtl] body .owl-nav .owl-prev svg {

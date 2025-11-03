@@ -369,46 +369,11 @@ html[dir=rtl] body {
 
             .btn-icon {
                 right: 4px;
-                transform: none;
+                transform: rotateY(180deg);
                 left: inherit;
             }
         }
     }
-
-    // .btn {
-    //     padding: 17px 24px 17px 58px;
-
-    //     .btn-text {
-
-    //     }
-
-    //     .btn-icon {
-    //         left: auto;
-    //         right: 100%;
-    //         transform: translate(108%, -50%);
-
-
-    //     }
-    //     iconify-icon{
-    //         svg{
-    //             transform: rotateY(180deg);
-    //         }
-    //     }
-
-
-    //     &:hover{
-
-    //         .btn-text{
-    //             transform: translateX(-2.5rem);
-    //         }
-
-    //         .btn-icon{
-    //             left: 100%;
-    //             right: auto;
-    //             transform: translate(-108%, -50%);
-    //         }
-    //     }
-    // }
 
     .owl-nav {
         .owl-prev {
